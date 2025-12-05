@@ -102,6 +102,22 @@ const ExplanationPanel = () => {
                         </div>
                     </div>
 
+                    {/* NOTE DE VISION ERGONOMIQUE AJOUTÉE ICI */}
+                    <div className="vision-note">
+                        <h5>Note de vision ergonomique</h5>
+                        <p>
+                            Notre priorité est de réduire la charge cognitive en dévoilant l’interface étape par étape,
+                            tout en gardant l’utilisateur en contrôle de son parcours. Le principal compromis assumé
+                            est d’ajouter quelques clics et transitions supplémentaires en échange d’une meilleure
+                            compréhension, d’un rythme plus calme et d’un sentiment de progression guidée.
+                        </p>
+                        <p>
+                            Cette démarche s’inspire des parcours d’onboarding des applications pédagogiques, des
+                            principes de design minimaliste et des recommandations d’ergonomie centrées sur
+                            l’accessibilité (contraste fort, hiérarchie visuelle claire, actions principales isolées).
+                        </p>
+                    </div>
+
                     <div className="explanation-footer">
                         <p>📍 Vous êtes à l'étape du parcours où nous montrons UNIQUEMENT ce qui est pertinent pour vous.</p>
                     </div>
@@ -1280,6 +1296,33 @@ function App() {
           font-size: 0.95rem;
           line-height: 1.5;
           opacity: 0.8;
+        }
+
+        .vision-note {
+          margin-bottom: 1.5rem;
+          padding: 1.25rem;
+          border-radius: 0.75rem;
+        }
+
+        .dark .vision-note {
+          background: rgba(148, 163, 184, 0.1);
+        }
+
+        .light .vision-note {
+          background: rgba(148, 163, 184, 0.12);
+        }
+
+        .vision-note h5 {
+          font-size: 1rem;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+        }
+
+        .vision-note p {
+          font-size: 0.9rem;
+          line-height: 1.6;
+          opacity: 0.9;
+          margin-bottom: 0.4rem;
         }
 
         .explanation-footer {
